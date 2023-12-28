@@ -112,6 +112,7 @@ nav:after {
   position: absolute;
   bottom: 0;
   left: 0;
+  width: 20vw;
   width: 20%;
   height: 100%;
   z-index: -1;
@@ -239,7 +240,17 @@ section p {
   font-weight: bold;
 }
 
-@media only screen and (max-width: 200px) {
+@media screen and (max-width: 580px) {
+  nav a {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+  .scroller:after {
+    content: "";
+  }
+}
+
+@media only screen and (max-width: 580px) {
   nav a {
     font-size: 0.55rem;
     line-height: 2rem;
@@ -262,7 +273,6 @@ section p {
     );
   }
 }
-
 /*
 @media only screen and (orientation: landscape) {
   nav a {
