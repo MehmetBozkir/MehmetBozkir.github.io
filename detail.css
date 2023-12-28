@@ -112,7 +112,6 @@ nav:after {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 20vw;
   width: 20%;
   height: 100%;
   z-index: -1;
@@ -240,12 +239,55 @@ section p {
   font-weight: bold;
 }
 
-@media screen and (max-width: 580px) {
+@media only screen and (max-width: 200px) {
   nav a {
-    font-size: 1.25rem;
+    font-size: 0.55rem;
     line-height: 2rem;
+    width: 20%;
   }
   .scroller:after {
     content: "";
   }
+  h2 {
+    font-size: xx-large;
+  }
+  nav:after {
+    background: linear-gradient(
+      90deg,
+      var(--sect1) 0 calc(20vw - 3px),
+      var(--sect2) 0 calc(40vw - 3px),
+      var(--sect3) 0 calc(60vw - 3px),
+      var(--sect4) 0 calc(80vw - 3px),
+      var(--sect5) 0 100vw
+    );
+  }
 }
+
+/*
+@media only screen and (orientation: landscape) {
+  nav a {
+    font-size: 0.85rem;
+    line-height: 2rem;
+    width: 20%;
+  }
+  .scroller:after {
+    content: "";
+  }
+  h2 {
+    font-size: xx-large;
+  }
+  nav:after {
+    background: linear-gradient(
+      90deg,
+      var(--sect1) 0 calc(20vw - 3px),
+      var(--sect2) 0 calc(40vw - 3px),
+      var(--sect3) 0 calc(60vw - 3px),
+      var(--sect4) 0 calc(80vw - 3px),
+      var(--sect5) 0 150vw
+    );
+  }
+  section {
+    height: 125vh;
+  }
+}
+*/
