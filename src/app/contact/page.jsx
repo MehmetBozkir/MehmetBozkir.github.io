@@ -80,6 +80,13 @@ const ContactPage = () => {
             type="text"
             className="bg-transparent border-b-2 border-b-black outline-none"
           />
+          <span>Mehmet's e-mail address</span>
+          <input
+            type="text"
+            placeholder="mehmetsalihbozkir@gmail.com"
+            className="bg-transparent border-b-2 border-b-black outline-none"
+            disabled
+          />
           <span>Regards</span>
           <button className="bg-purple-200 rounded font-semibold text-gray-600 p-4">
             Send
